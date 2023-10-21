@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator(); // Thay đổi từ '@react-navigati
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Screen1' screenOptions={{headerShown:false}}>
+      <Stack.Navigator initialRouteName='Screen_02' screenOptions={{headerShown:false}}>
         <Stack.Screen name="Screen_01" component={Screen_01} />
         <Stack.Screen name="Screen_02" component={Screen_02} />
         <Stack.Screen name="Screen_03" component={Screen_03} />
