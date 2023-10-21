@@ -5,46 +5,69 @@ import { Text, View, Image, FlatList } from "react-native";
 const arrBikes = [
   {
     id: 1,
-    img: require("../assets/bifour_-removebg-preview.png"),
+    image: require("../assets/bifour_-removebg-preview.png"),
     name: "Pinarello",
-    price: "1800",
-    type: "Roadbike"
+    price: 1800,
+    type: "Roadbike",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 100
   },
   {
     id: 2,
-    img: require("../assets/bione-removebg-preview.png"),
+    image: require("../assets/bione-removebg-preview.png"),
     name: "Pina Mountai",
-    price: "1600",
-    type: "Roadbike"
+    price: 1700,
+    type: "Roadbike",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 70
   },
   {
     id: 3,
-    img: require("../assets/bithree_removebg-preview.png"),
+    image: require("../assets/bithree_removebg-preview.png"),
     name: "Pina Bike",
     price: "1500",
-    type: "Roadbike"
+    type: "Roadbike",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 10
   },
   {
     id: 4,
-    img: require("../assets/bitwo-removebg-preview.png"),
+    image: require("../assets/bitwo-removebg-preview.png"),
     name: "Pinarello",
-    price: "1700",
-    type: "Mountain"
+    price: 1900,
+    type: "Mountain",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 20
   },
   {
     id: 5,
-    img: require("../assets/bithree_removebg-preview.png"),
+    image: require("../assets/bithree_removebg-preview.png"),
     name: "Pinarello",
-    price: "1850",
-    type: "Mountain"
+    price: 2700,
+    type: "Mountain",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 80
   },
   {
     id: 6,
     name: "Pinarello",
-    img: require("../assets/bitwo-removebg-preview.png"),
-    price: "1300",
-
-    type: "Mountain"
+    image: require("../assets/bitwo-removebg-preview.png"),
+    price: 1350,
+    type: "Mountain",
+    description:
+      "It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.",
+    like: false,
+    discount: 60
   }
 ];
 
@@ -144,7 +167,7 @@ export default function App({ navigation }) {
               onPress={() => navigation.push("Screen_03", { bike: item })}
             >
               <Image
-                source={item.img}
+                source={item.image}
                 style={{
                   flex: 1,
                   width: 135,
